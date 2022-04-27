@@ -19,8 +19,8 @@ body {
 .key {
   border: 1px solid var(--font-color);
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   margin: 20px;
   background: linear-gradient(-45deg, var(--main-color), var(--main-color-light));
 
