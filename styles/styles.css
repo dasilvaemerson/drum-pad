@@ -1,0 +1,32 @@
+/*variables*/
+:root {
+    --main-color: #B842B9;
+    --main-color-light: #f164f4;
+    --font-color: white;
+  }
+
+body {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+  }
+
+.key {
+  border: 1px solid var(--font-color);
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: linear-gradient(-45deg, var(--main-color), var(--main-color-light));
+
+  color: var(--font-color);
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
