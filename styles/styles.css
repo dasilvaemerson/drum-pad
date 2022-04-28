@@ -45,6 +45,11 @@ body {
   background: var(--main-color-light);
 }
 
+.pressed {
+  transform: scale(1.1);
+  background: radial-gradient(ellipse at center, rgba(240,249,255,1) 0%, var(--main-color-light) 100%);
+}
+
 footer{
   bottom: 0;
   position: fixed;
@@ -66,7 +71,7 @@ footer{
 .footer-icon {
   color: var(--font-color);
   margin: 0px 20px;
-  transition: ease 0.8s;
+  transition: ease 0.5s;
 }
 
 .footer-icon:hover {
