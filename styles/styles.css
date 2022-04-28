@@ -22,6 +22,8 @@ body {
 .keys {
     display: flex;
     justify-content: center;
+    height: 93vh;
+    align-items: center;
   }
 
 .key {
@@ -50,4 +52,23 @@ footer{
   background: var(--main-color);  
   color: var(--font-color);
   text-align:center;
+}
+
+.footer-icons {
+  padding:5px;
+}
+
+.footer-copyright {
+  padding:0px 0px 5px 0px;
+  font-size: small;
+}
+
+.footer-icon {
+  color: var(--font-color);
+  margin: 0px 20px;
+  transition: ease 0.8s;
+}
+
+.footer-icon:hover {
+  color: yellow;
 }
