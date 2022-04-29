@@ -12,3 +12,18 @@ function playSound(ev) { //ev ist the click event
   }
   
 window.addEventListener("keydown", playSound);
+
+function handleClick(ev) {
+      const audio = document.querySelector(`audio[data-sound="${ev.target.dataset.sound}"]`);
+      const key = document.querySelector(`.key[data-sound="${ev.target.dataset.sound}"]`);
+      audio.currentTime = 0;
+      audio.play();
+      key.classList.add("pressed");
+    setTimeout(function() {
+        key.classList.remove("pressed");
+      }, 100);
+  }
+  
+  for (let i = 0; i < keys.length; i++) {
+    keys[i].addEventListener("click", handleClick);
+  }
